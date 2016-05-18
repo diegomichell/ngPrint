@@ -1,1 +1,2 @@
-*** Hello, this is ngPrint ***
+ngPrint — Generate PDFs from angular the easy way.
+==================================================
