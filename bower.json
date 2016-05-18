@@ -1,0 +1,24 @@
+{
+  "name": "ngPrint",
+  "authors": [
+    "Diego Michel <diego.ivan.perez.michel@gmail.com>"
+  ],
+  "description": "An angular module that provides client and server-side printing created from simple plain angular templates",
+  "main": "dist/ngprint.min.js",
+  "keywords": [
+    "ngPrint"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html2canvas": "^0.4.1",
+    "jspdf": "^1.2.61"
+  }
+}

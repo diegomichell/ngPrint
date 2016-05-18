@@ -1,0 +1,29 @@
+{
+  "name": "ngprint",
+  "version": "1.0.0",
+  "description": "An angular module that provides client and server-side printing created from simple plain angular templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanevil/ngPrint.git"
+  },
+  "keywords": [
+    "ngPrint",
+    "angular-print",
+    "pdfAngular",
+    "pdfjs",
+    "printjs"
+  ],
+  "author": "Diego Michel <diego.ivan.perez.michel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanevil/ngPrint/issues"
+  },
+  "homepage": "https://github.com/ivanevil/ngPrint#readme",
+  "devDependencies": {
+    "gulp-minify": "0.0.11"
+  }
+}
