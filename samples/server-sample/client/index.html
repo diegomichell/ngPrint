@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Report</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body ng-app="app">
+
+	<div class="container" ng-controller="ServerReportCtrl">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3>People Report</h3>
+					<div class="form-group ">
+						<input type="text" class="form-control" style="margin-bottom: 10px;" placeholder="Search ..." ng-model="search">
+						<button type="button" printer printer-server-url="{{serverUrl}}" printer-download-url="{{downloadUrl}}" report-title="Report" printer-data="people" report-template-url="{{reportTemplate}}" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-print"></i> Imprimir</button>
+					</div>
+					<div style="clear:both">
+					</div>
+				</div>
+				<div class="panel-body">
+					<table class="table">
+						<thead>
+							<thead>
+								<tr>
+									<th>
+										Name
+									</th>
+									<th>
+										Last Name
+									</th>
+									<th>
+										Age
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="p in people | filter: search">
+									<td>
+										{{p.Name}}
+									</td>
+									<td>
+										{{p.Last}}
+									</td>
+									<td>
+										{{p.Age}}
+									</td>
+								</tr>
+							</tbody>
+						</thead>
+					</table>
+				</div>
+			</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+	<script type="text/javascript" src="lib/html2pdf.js"></script>
+	<script type="text/javascript" src="lib/ngprint.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<div>
+
+  <meta charset="UTF-8" />
+
+  <style type="text/css">
+
+    .heading {
+      text-align: center;
+      width: 100%;
+    }
+
+    .sub {
+      width: 100%;
+      text-align: center;
+    }
+
+    table {
+        background-color: transparent,
+    }
+
+    th {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    td {
+      font-size: 12px;
+    }
+
+    .table {
+        width: 600px;
+        margin-bottom: 0;
+    }
+
+    .table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th {
+        vertical-align: middle;
+        border-top: 1px solid #eee;
+    }
+
+    .table>thead>tr>th {
+        font-weight: 600;
+        vertical-align: bottom;
+        border-bottom: 1px solid #eee
+    }
+
+    .table>caption+thead>tr:first-child>td,.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>td,.table>thead:first-child>tr:first-child>th {
+        border-top: 0;
+    }
+
+    .info {
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .info > div {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+    }
+
+    .pull-right {
+      float: right;
+    }
+
+    table, tr, td, th, tbody, thead, tfoot {
+        page-break-inside: avoid !important;
+    }
+
+    .box {
+      border: 2px solid #000;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .pd5 {
+      padding: 5px;
+    }
+
+    .mgv {
+      margin: 8px 0;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+  </style>
+
+  <h1 class="heading">Report Sample</h1>
+
+  <table class="table">
+    <thead>
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Last Name
+          </th>
+          <th>
+            Age
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="p in printerData">
+          <td>
+            {{p.Name}}
+          </td>
+          <td>
+            {{p.Last}}
+          </td>
+          <td>
+            {{p.Age}}
+          </td>
+        </tr>
+      </tbody>
+    </thead>
+  </table>
+</div>

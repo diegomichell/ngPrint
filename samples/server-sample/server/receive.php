@@ -1,11 +1,10 @@
 <?php
-	require __DIR__ . '/../../vendor/autoload.php';
+	require __DIR__ . '/vendor/autoload.php';
 	use mikehaertl\wkhtmlto\Pdf;
 
 	$pdf = new Pdf();
 
-	//Production Only
-	$pdf->binary = '/usr/local/bin/wkhtmltopdf.sh';
+	// $pdf->binary = 'path/wkhtmltopdf';
 
 	$title = $_GET['title'];
 
