@@ -5,14 +5,14 @@ ngPrint — Generate PDFs from angular the easy way.
 
 > To get started using this module follow the next steps
 
-1. First add the **ngPrint** module as a dependency to your angular app
+First add the **ngPrint** module as a dependency to your angular app
 
 ```javascript
 
   angula.module('app', ['ngPrint']);
 ```
 
-2. Make sure you have setup the script dependencies described in the **bower.json** file, you need ***html2canvas*** and ***jspdf*** you can get them by adding the following to your *bower.json*
+Make sure you have setup the script dependencies described in the **bower.json** file, you need ***html2canvas*** and ***jspdf*** you can get them by adding the following to your *bower.json*
 
 ```json
 "dependencies": {
@@ -30,7 +30,7 @@ ngPrint — Generate PDFs from angular the easy way.
 >You also need **html2pdf.js** located in the *lib* directory.
 
 
-3. Add the scripts in the following order to your main **index.html** file.
+Add the scripts in the following order to your main **index.html** file.
 
 ```html
 <script type="text/javascript" src="bower_components/jspdf/dist/jspdf.min.js"></script>
@@ -43,11 +43,10 @@ ngPrint — Generate PDFs from angular the easy way.
 
 ## Start using it
 
->ngPrint consist in a simple **printer** directive that you can add to your action elements like *links* and *buttons*  
+>ngPrint consist in a simple **printer** directive that you can add to your action elements like *links* and *buttons*
+
 ```html
-
   <button type="button" printer report-title="Report" printer-data="people" print-on-client="true" report-template-url="{{reportTemplate}}"> Print</button>
-
 ```
 
 
